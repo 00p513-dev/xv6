@@ -170,6 +170,9 @@ void            uartinit(void);
 void            uartintr(void);
 void            uartputc(int);
 
+// vbe.c
+void vbeTest(void);
+
 // vm.c
 void            seginit(void);
 void            kvmalloc(void);
