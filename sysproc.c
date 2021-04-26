@@ -96,7 +96,10 @@ int
 sys_halt(void)
 {
   char *p = "Shutdown";
-  for( ; *p; p++)
+  for( ; *p; p++) {
     outw(0xB004, 0x2000);
+    outw(0x604, 0x2000);
+    outw(0x4004, 0x3400);
+  }
   return 0;
 }
