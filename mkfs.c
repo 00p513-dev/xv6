@@ -24,7 +24,8 @@ int nbitmap = FSSIZE/(BSIZE*8) + 1;
 int ninodeblocks = NINODES / IPB + 1;
 int nlog = LOGSIZE;
 int nmeta;    // Number of meta blocks (boot, sb, nlog, inode, bitmap)
-int nblocks;  // Number of data blocks
+int nblocks = 20985;  // Number of data blocks
+int size = 21029;
 
 int fsfd;
 struct superblock sb;
